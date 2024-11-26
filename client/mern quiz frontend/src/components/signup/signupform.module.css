@@ -1,0 +1,99 @@
+/* General container styles for centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Box styling for the signup form */
+.form-container {
+  background-color: white;
+  padding: 40px 30px; /* Added more padding for better spacing */
+  width: 100%;
+  max-width: 450px; /* Limit the width of the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center; /* Ensure all content is centered */
+}
+
+/* Styling for logo inside the box */
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px; /* Increased the gap below logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo svg {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+}
+
+form .form-group {
+  margin-bottom: 25px; /* Increased gap between input fields */
+}
+
+form .form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px; /* Increased margin between label and input */
+}
+
+form .form-control {
+  padding: 12px; /* Increased padding for better input feel */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px; /* Added margin for space between button and form fields */
+}
+
+/* Text section for login link */
+.text-center {
+  margin-top: 25px;
+}
+
+/* Alerts styling */
+.alert {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
+
+  form .form-group {
+    margin-bottom: 15px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

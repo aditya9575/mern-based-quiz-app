@@ -1,0 +1,222 @@
+[
+  {
+    "text": "What is the value of 2 + 2?",
+    "difficulty": 1,
+    "topics": ["arithmetic"],
+    "options": [
+      { "optionText": "3", "isCorrect": false },
+      { "optionText": "4", "isCorrect": true },
+      { "optionText": "5", "isCorrect": false },
+      { "optionText": "6", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Solve for x: 5x = 25",
+    "difficulty": 1,
+    "topics": ["algebra"],
+    "options": [
+      { "optionText": "10", "isCorrect": false },
+      { "optionText": "5", "isCorrect": true },
+      { "optionText": "1", "isCorrect": false },
+      { "optionText": "0", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the area of a circle with radius 7 cm?",
+    "difficulty": 2,
+    "topics": ["geometry"],
+    "options": [
+      { "optionText": "154 cm²", "isCorrect": true },
+      { "optionText": "44 cm²", "isCorrect": false },
+      { "optionText": "100 cm²", "isCorrect": false },
+      { "optionText": "49 cm²", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which of these numbers is a prime number?",
+    "difficulty": 2,
+    "topics": ["number theory"],
+    "options": [
+      { "optionText": "4", "isCorrect": false },
+      { "optionText": "9", "isCorrect": false },
+      { "optionText": "11", "isCorrect": true },
+      { "optionText": "15", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "If a train travels 60 miles in 1.5 hours, what is its speed?",
+    "difficulty": 2,
+    "topics": ["arithmetic", "time-speed"],
+    "options": [
+      { "optionText": "40 mph", "isCorrect": true },
+      { "optionText": "50 mph", "isCorrect": false },
+      { "optionText": "60 mph", "isCorrect": false },
+      { "optionText": "30 mph", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Simplify: (3x + 2x) - 4",
+    "difficulty": 1,
+    "topics": ["algebra"],
+    "options": [
+      { "optionText": "4x - 4", "isCorrect": false },
+      { "optionText": "5x - 4", "isCorrect": true },
+      { "optionText": "5x + 4", "isCorrect": false },
+      { "optionText": "x - 4", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the probability of rolling a 3 on a standard 6-sided die?",
+    "difficulty": 3,
+    "topics": ["probability"],
+    "options": [
+      { "optionText": "1/2", "isCorrect": false },
+      { "optionText": "1/3", "isCorrect": false },
+      { "optionText": "1/6", "isCorrect": true },
+      { "optionText": "1/12", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which angle is considered a right angle?",
+    "difficulty": 1,
+    "topics": ["geometry"],
+    "options": [
+      { "optionText": "90°", "isCorrect": true },
+      { "optionText": "45°", "isCorrect": false },
+      { "optionText": "180°", "isCorrect": false },
+      { "optionText": "360°", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Solve for x: x² = 16",
+    "difficulty": 2,
+    "topics": ["algebra"],
+    "options": [
+      { "optionText": "4 and -4", "isCorrect": true },
+      { "optionText": "4 only", "isCorrect": false },
+      { "optionText": "-4 only", "isCorrect": false },
+      { "optionText": "8 and -8", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "If a triangle has sides of 3 cm, 4 cm, and 5 cm, what kind of triangle is it?",
+    "difficulty": 2,
+    "topics": ["geometry"],
+    "options": [
+      { "optionText": "Right-angled triangle", "isCorrect": true },
+      { "optionText": "Isosceles triangle", "isCorrect": false },
+      { "optionText": "Equilateral triangle", "isCorrect": false },
+      { "optionText": "Scalene triangle", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the derivative of x² with respect to x?",
+    "difficulty": 3,
+    "topics": ["calculus"],
+    "options": [
+      { "optionText": "2x", "isCorrect": true },
+      { "optionText": "x", "isCorrect": false },
+      { "optionText": "x²", "isCorrect": false },
+      { "optionText": "1", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Convert 0.75 into a fraction.",
+    "difficulty": 1,
+    "topics": ["arithmetic"],
+    "options": [
+      { "optionText": "1/2", "isCorrect": false },
+      { "optionText": "3/4", "isCorrect": true },
+      { "optionText": "1/4", "isCorrect": false },
+      { "optionText": "2/3", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the slope of a line passing through points (0, 0) and (2, 2)?",
+    "difficulty": 2,
+    "topics": ["geometry", "algebra"],
+    "options": [
+      { "optionText": "1", "isCorrect": true },
+      { "optionText": "2", "isCorrect": false },
+      { "optionText": "0", "isCorrect": false },
+      { "optionText": "Undefined", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "A bag contains 5 red balls, 3 green balls, and 2 blue balls. What is the probability of drawing a green ball?",
+    "difficulty": 3,
+    "topics": ["probability"],
+    "options": [
+      { "optionText": "1/2", "isCorrect": false },
+      { "optionText": "3/10", "isCorrect": true },
+      { "optionText": "2/5", "isCorrect": false },
+      { "optionText": "1/5", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Find the derivative of sin(x) with respect to x.",
+    "difficulty": 3,
+    "topics": ["calculus"],
+    "options": [
+      { "optionText": "cos(x)", "isCorrect": true },
+      { "optionText": "-sin(x)", "isCorrect": false },
+      { "optionText": "tan(x)", "isCorrect": false },
+      { "optionText": "cot(x)", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Solve the quadratic equation: 2x² + 5x - 3 = 0.",
+    "difficulty": 3,
+    "topics": ["algebra"],
+    "options": [
+      { "optionText": "x = 1/2, -3", "isCorrect": true },
+      { "optionText": "x = -1/2, 3", "isCorrect": false },
+      { "optionText": "x = 2, -3/2", "isCorrect": false },
+      { "optionText": "x = -2, 3/2", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the area of a triangle with base 6 cm and height 8 cm?",
+    "difficulty": 2,
+    "topics": ["geometry"],
+    "options": [
+      { "optionText": "24 cm²", "isCorrect": true },
+      { "optionText": "12 cm²", "isCorrect": false },
+      { "optionText": "48 cm²", "isCorrect": false },
+      { "optionText": "36 cm²", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Simplify: (5x²y³)⁴",
+    "difficulty": 2,
+    "topics": ["algebra"],
+    "options": [
+      { "optionText": "625x⁸y¹²", "isCorrect": true },
+      { "optionText": "20x⁸y¹²", "isCorrect": false },
+      { "optionText": "25x⁶y⁹", "isCorrect": false },
+      { "optionText": "10x⁶y⁹", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "If a car travels 120 km in 2 hours, what is its average speed?",
+    "difficulty": 2,
+    "topics": ["arithmetic"],
+    "options": [
+      { "optionText": "60 km/h", "isCorrect": true },
+      { "optionText": "40 km/h", "isCorrect": false },
+      { "optionText": "80 km/h", "isCorrect": false },
+      { "optionText": "100 km/h", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the sum of 5 and 7?",
+    "difficulty": 1,
+    "topics": ["arithmetic"],
+    "options": [
+      { "optionText": "10", "isCorrect": false },
+      { "optionText": 12, "isCorrect": true },
+      { "optionText": "15", "isCorrect": false },
+      { "optionText": "8", "isCorrect": false }
+    ]
+  }
+]

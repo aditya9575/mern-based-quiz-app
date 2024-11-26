@@ -1,0 +1,65 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.iconRow {
+  margin-top: 20px;
+}
+
+.iconCol {
+  margin-bottom: 20px;
+}
+
+.iconLink {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.iconLink:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.linkedin {
+  color: #0a66c2;
+}
+
+.github {
+  color: #333;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.email {
+  color: #c71610;
+}
