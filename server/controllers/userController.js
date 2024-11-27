@@ -90,6 +90,7 @@ exports.signup = async (req, res) => {
             age,
             email,
             phoneNumber,
+            googleId: email,
             password: hashedPassword,
             signupMethod: 'custom',
         });
