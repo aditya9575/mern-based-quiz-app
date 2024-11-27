@@ -52,7 +52,7 @@ const App = () => {
         />
         <Route
           path="/login"
-          element={!isAuthenticated ? <LoginForm setAuth={setIsAuthenticated} /> : <Navigate to="/home" />}
+          element={!isAuthenticated ? <LoginForm setAuth={setIsAuthenticated} /> : <HomePage />}
         />
 
         {/* Default redirect */}
