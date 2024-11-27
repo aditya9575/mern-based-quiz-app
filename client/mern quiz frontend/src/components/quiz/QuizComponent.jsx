@@ -26,7 +26,7 @@ const QuizComponent = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/questions')
+        axios.get('https://mern-based-quiz-app.vercel.app/questions')
             .then(response => {
                 setQuestions(response.data);
                 setLoading(false);
@@ -257,7 +257,7 @@ const QuizComponent = () => {
                         wrapper="h1"
                         cursor
                         repeat={Infinity}
-                        className={styles.animationText} // Add your CSS styling for the text
+                        className={styles.animationText}
                     />
                     <p>
                         Quizzy is your ultimate learning companion! Dive into a world of interactive quizzes

@@ -34,7 +34,7 @@ const LoginForm = ({ setAuth }) => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/login', formData);
+            const response = await axios.post('https://mern-based-quiz-app.vercel.app/login', formData);
             setMessage(response.data.message);
 
             // Save token and name to localStorage
@@ -54,7 +54,7 @@ const LoginForm = ({ setAuth }) => {
             const decoded = jwtDecode(credentialResponse?.credential);
             const { name, email } = decoded;
 
-            const response = await axios.post('http://localhost:5000/google-login', {
+            const response = await axios.post('https://mern-based-quiz-app.vercel.app/google-login', {
                 name,
                 email,
                 googleId: decoded.sub,

@@ -40,7 +40,7 @@ const SignupForm = () => {
 
         try {
             // Sending POST request to backend for signup
-            const response = await axios.post('http://localhost:5000/signup', formData);
+            const response = await axios.post('https://mern-based-quiz-app.vercel.app/signup', formData);
             setMessage(response.data.message); // Response from backend (e.g., success message)
             setTimeout(() => {
                 navigate('/login'); // Redirect to login after successful signup
@@ -63,7 +63,7 @@ const SignupForm = () => {
             console.log(decoded.sub)
 
             // Send `name` and `email` to the backend
-            const response = await axios.post('http://localhost:5000/google-login', {
+            const response = await axios.post('https://mern-based-quiz-app.vercel.app/google-login', {
                 name,
                 email,
                 googleId: decoded.sub, // Include Google ID (sub) if necessary
