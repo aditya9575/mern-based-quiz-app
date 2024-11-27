@@ -1,9 +1,15 @@
 const fs = require('fs');
 const Question = require('../models/QuestionModel');
 
+const path = require('path');
+const questionsPath = path.join(__dirname, '..', 'questions.json'); // Adjust the path based on your directory structure
+
+
 // Core logic for syncing questions
 const syncQuestionsLogic = async () => {
-    const questionsFile = './questions.json';
+    // const questionsFile = './questions.json';
+    const questionsFile = questionsPath;
+
     const questionsData = JSON.parse(fs.readFileSync(questionsFile, 'utf-8'));
 
     // Check for differences between DB and file
