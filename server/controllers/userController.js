@@ -55,37 +55,106 @@ exports.googleLogin = async (req, res) => {
 
 
 // User signup function
+// exports.signup = async (req, res) => {
+//     const { name, age, email, phoneNumber, password } = req.body;
+
+//     if (!name || !age || !email || !phoneNumber || !password) {
+//         return res.status(400).json({ error: 'Please fill in all fields' });
+//     }
+
+//     try {
+//         // Check if user already exists
+//         const existingUser = await User.findOne({ email });
+
+//         const existingNumber = await User.findOne({ phoneNumber });
+
+//         if (existingNumber === phoneNumber) {
+//             return res.status(400).json({
+//                 error: 'Phone Number already registered. Use diffrent Number',
+//             });
+//         }
+
+//         // if(phoneNumber)
+
+
+//         if (existingUser) {
+//             // If user exists and used Google signup
+//             if (existingUser.signupMethod === 'google') {
+//                 return res.status(400).json({
+//                     error: 'User already exists. Please log in with your Google account.',
+//                 });
+//             }
+
+//             // If user exists and used custom signup
+//             return res.status(400).json({
+//                 error: 'User already exists. Please log in with your email and password.',
+//             });
+//         }
+
+//         // Hash the password
+//         const saltRounds = 10;
+//         const hashedPassword = await bcryptjs.hash(password, saltRounds);
+
+//         // Create a new user
+//         const newUser = new User({
+//             name,
+//             age,
+//             email,
+//             phoneNumber,
+//             googleId: email,
+//             password: hashedPassword,
+//             signupMethod: 'custom',
+//         });
+
+//         await newUser.save();
+
+//         res.status(201).json({ message: 'User registered successfully' });
+//     } catch (err) {
+//         console.error('Error in signup:', err);
+//         res.status(500).json({ error: 'Server error. Please try again.' });
+//     }
+// };
 exports.signup = async (req, res) => {
     const { name, age, email, phoneNumber, password } = req.body;
 
-    if (!name || !age || !email || !phoneNumber || !password) {
+    // Basic field presence validation
+    if (!name || !email || !phoneNumber || !password) {
         return res.status(400).json({ error: 'Please fill in all fields' });
     }
 
     try {
-        // Check if user already exists
+        // Check for duplicate email
         const existingUser = await User.findOne({ email });
-
-        const existingNumber = await User.findOne({ phoneNumber });
-
-        if (existingNumber === phoneNumber) {
-            return res.status(400).json({
-                error: 'Phone Number already registered. Use diffrent Number',
-            });
-        }
-
-
         if (existingUser) {
-            // If user exists and used Google signup
             if (existingUser.signupMethod === 'google') {
                 return res.status(400).json({
                     error: 'User already exists. Please log in with your Google account.',
                 });
             }
-
-            // If user exists and used custom signup
             return res.status(400).json({
                 error: 'User already exists. Please log in with your email and password.',
+            });
+        }
+
+        // Check for duplicate phone number
+        const existingNumber = await User.findOne({ phoneNumber });
+        if (existingNumber) {
+            return res.status(400).json({
+                error: 'Phone number already registered. Please use a different number.',
+            });
+        }
+
+        // Validate age
+        if (age < 0 || age > 100) {
+            return res.status(400).json({
+                error: 'Age must be between 0 and 100.',
+            });
+        }
+
+        // Validate password length
+        if (password.length < 5) {
+            return res.status(400).json({
+                error: 'Password must be at least 5 characters long.',
             });
         }
 
@@ -99,16 +168,24 @@ exports.signup = async (req, res) => {
             age,
             email,
             phoneNumber,
-            googleId: email,
             password: hashedPassword,
             signupMethod: 'custom',
         });
 
+        // Save user to the database
         await newUser.save();
 
         res.status(201).json({ message: 'User registered successfully' });
     } catch (err) {
         console.error('Error in signup:', err);
+
+        // Handle Mongoose validation errors
+        if (err.name === 'ValidationError') {
+            const errors = Object.values(err.errors).map((error) => error.message);
+            return res.status(400).json({ error: errors.join(', ') });
+        }
+
+        // Handle server errors
         res.status(500).json({ error: 'Server error. Please try again.' });
     }
 };
