@@ -66,6 +66,15 @@ exports.signup = async (req, res) => {
         // Check if user already exists
         const existingUser = await User.findOne({ email });
 
+        const existingNumber = await User.findOne({ phoneNumber });
+
+        if (existingNumber === phoneNumber) {
+            return res.status(400).json({
+                error: 'Phone Number already registered. Use diffrent Number',
+            });
+        }
+
+
         if (existingUser) {
             // If user exists and used Google signup
             if (existingUser.signupMethod === 'google') {
