@@ -116,6 +116,14 @@ exports.login = async (req, res) => {
 
     try {
         const user = await User.findOne({ email });
+
+        // Check the signup method for error handling of mismatched login attempt
+        if (user.signupMethod === 'google') {
+            return res.status(400).json({
+                error: 'User exists but registered with Google. Please log in using Google.',
+            });
+        }
+
         if (!user) {
             return res.status(400).json({ error: 'Invalid email or password' });
         }

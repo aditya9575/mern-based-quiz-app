@@ -18,7 +18,7 @@ const QuizComponent = () => {
     const [questions, setQuestions] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedOptions, setSelectedOptions] = useState({});
-    const [timeLeft, setTimeLeft] = useState(180); // 3 minutes in seconds
+    const [timeLeft, setTimeLeft] = useState(240); // 4 minutes in seconds
     const [quizStarted, setQuizStarted] = useState(false);
     const [quizFinished, setQuizFinished] = useState(false);
     const [results, setResults] = useState(null);
