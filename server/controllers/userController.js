@@ -170,6 +170,7 @@ exports.signup = async (req, res) => {
             phoneNumber,
             password: hashedPassword,
             signupMethod: 'custom',
+            googleId: email
         });
 
         // Save user to the database
