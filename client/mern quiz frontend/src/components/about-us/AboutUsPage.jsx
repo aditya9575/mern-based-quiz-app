@@ -11,7 +11,7 @@ const AboutUsPage = () => {
                     <IoStarHalfSharp className={styles.icon} />
                     <h1 className={styles.title}>About Quizzy</h1>
                     <p className={styles.description}>
-                        Welcome to **Quizzy**! We are a platform dedicated to helping students from grades 7-10
+                        Welcome to **Quizzy**! We are a platform dedicated to helping students 
                         test and enhance their knowledge through engaging and adaptive quizzes. At Quizzy, we believe
                         in empowering students by providing a personalized learning experience tailored to their
                         strengths and areas of improvement.
