@@ -1,222 +1,223 @@
 [
   {
-    "text": "What is the value of 2 + 2?",
+    "text": "What does HTML stand for?",
     "difficulty": 1,
-    "topics": ["arithmetic"],
+    "topics": ["HTML"],
     "options": [
-      { "optionText": "3", "isCorrect": false },
-      { "optionText": "4", "isCorrect": true },
-      { "optionText": "5", "isCorrect": false },
-      { "optionText": "6", "isCorrect": false }
+      { "optionText": "HyperText Markup Language", "isCorrect": true },
+      { "optionText": "HyperText Management Language", "isCorrect": false },
+      { "optionText": "Hyper Tool Markup Language", "isCorrect": false },
+      { "optionText": "HyperText Modeling Language", "isCorrect": false }
     ]
   },
   {
-    "text": "Solve for x: 5x = 25",
+    "text": "What is the purpose of the <div> tag in HTML?",
     "difficulty": 1,
-    "topics": ["algebra"],
+    "topics": ["HTML"],
     "options": [
-      { "optionText": "10", "isCorrect": false },
-      { "optionText": "5", "isCorrect": true },
-      { "optionText": "1", "isCorrect": false },
-      { "optionText": "0", "isCorrect": false }
+      { "optionText": "Defines a section in a document", "isCorrect": true },
+      { "optionText": "Used to create headings", "isCorrect": false },
+      { "optionText": "Used to create hyperlinks", "isCorrect": false },
+      { "optionText": "Defines a list item", "isCorrect": false }
     ]
   },
   {
-    "text": "What is the area of a circle with radius 7 cm?",
-    "difficulty": 2,
-    "topics": ["geometry"],
-    "options": [
-      { "optionText": "154 cm²", "isCorrect": true },
-      { "optionText": "44 cm²", "isCorrect": false },
-      { "optionText": "100 cm²", "isCorrect": false },
-      { "optionText": "49 cm²", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Which of these numbers is a prime number?",
-    "difficulty": 2,
-    "topics": ["number theory"],
-    "options": [
-      { "optionText": "4", "isCorrect": false },
-      { "optionText": "9", "isCorrect": false },
-      { "optionText": "11", "isCorrect": true },
-      { "optionText": "15", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "If a train travels 60 miles in 1.5 hours, what is its speed?",
-    "difficulty": 2,
-    "topics": ["arithmetic", "time-speed"],
-    "options": [
-      { "optionText": "40 mph", "isCorrect": true },
-      { "optionText": "50 mph", "isCorrect": false },
-      { "optionText": "60 mph", "isCorrect": false },
-      { "optionText": "30 mph", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Simplify: (3x + 2x) - 4",
+    "text": "Which of the following is a valid CSS property?",
     "difficulty": 1,
-    "topics": ["algebra"],
+    "topics": ["CSS"],
     "options": [
-      { "optionText": "4x - 4", "isCorrect": false },
-      { "optionText": "5x - 4", "isCorrect": true },
-      { "optionText": "5x + 4", "isCorrect": false },
-      { "optionText": "x - 4", "isCorrect": false }
+      { "optionText": "color", "isCorrect": true },
+      { "optionText": "font-size", "isCorrect": true },
+      { "optionText": "border-width", "isCorrect": true },
+      { "optionText": "All of the above", "isCorrect": true }
     ]
   },
   {
-    "text": "What is the probability of rolling a 3 on a standard 6-sided die?",
-    "difficulty": 3,
-    "topics": ["probability"],
-    "options": [
-      { "optionText": "1/2", "isCorrect": false },
-      { "optionText": "1/3", "isCorrect": false },
-      { "optionText": "1/6", "isCorrect": true },
-      { "optionText": "1/12", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Which angle is considered a right angle?",
+    "text": "What is the correct syntax for a JavaScript function?",
     "difficulty": 1,
-    "topics": ["geometry"],
+    "topics": ["JavaScript"],
     "options": [
-      { "optionText": "90°", "isCorrect": true },
-      { "optionText": "45°", "isCorrect": false },
-      { "optionText": "180°", "isCorrect": false },
-      { "optionText": "360°", "isCorrect": false }
+      { "optionText": "function myFunction()", "isCorrect": true },
+      { "optionText": "function: myFunction()", "isCorrect": false },
+      { "optionText": "function = myFunction()", "isCorrect": false },
+      { "optionText": "def myFunction()", "isCorrect": false }
     ]
   },
   {
-    "text": "Solve for x: x² = 16",
-    "difficulty": 2,
-    "topics": ["algebra"],
-    "options": [
-      { "optionText": "4 and -4", "isCorrect": true },
-      { "optionText": "4 only", "isCorrect": false },
-      { "optionText": "-4 only", "isCorrect": false },
-      { "optionText": "8 and -8", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "If a triangle has sides of 3 cm, 4 cm, and 5 cm, what kind of triangle is it?",
-    "difficulty": 2,
-    "topics": ["geometry"],
-    "options": [
-      { "optionText": "Right-angled triangle", "isCorrect": true },
-      { "optionText": "Isosceles triangle", "isCorrect": false },
-      { "optionText": "Equilateral triangle", "isCorrect": false },
-      { "optionText": "Scalene triangle", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "What is the derivative of x² with respect to x?",
-    "difficulty": 3,
-    "topics": ["calculus"],
-    "options": [
-      { "optionText": "2x", "isCorrect": true },
-      { "optionText": "x", "isCorrect": false },
-      { "optionText": "x²", "isCorrect": false },
-      { "optionText": "1", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Convert 0.75 into a fraction.",
+    "text": "Which method is used to add an element at the end of an array in JavaScript?",
     "difficulty": 1,
-    "topics": ["arithmetic"],
+    "topics": ["JavaScript"],
     "options": [
-      { "optionText": "1/2", "isCorrect": false },
-      { "optionText": "3/4", "isCorrect": true },
-      { "optionText": "1/4", "isCorrect": false },
-      { "optionText": "2/3", "isCorrect": false }
+      { "optionText": "push()", "isCorrect": true },
+      { "optionText": "pop()", "isCorrect": false },
+      { "optionText": "shift()", "isCorrect": false },
+      { "optionText": "unshift()", "isCorrect": false }
     ]
   },
   {
-    "text": "What is the slope of a line passing through points (0, 0) and (2, 2)?",
+    "text": "What does Node.js allow you to do?",
     "difficulty": 2,
-    "topics": ["geometry", "algebra"],
+    "topics": ["Node.js"],
     "options": [
-      { "optionText": "1", "isCorrect": true },
-      { "optionText": "2", "isCorrect": false },
-      { "optionText": "0", "isCorrect": false },
-      { "optionText": "Undefined", "isCorrect": false }
+      { "optionText": "Run JavaScript on the server", "isCorrect": true },
+      { "optionText": "Build static websites", "isCorrect": false },
+      { "optionText": "Design web pages", "isCorrect": false },
+      { "optionText": "Create mobile applications", "isCorrect": false }
     ]
   },
   {
-    "text": "A bag contains 5 red balls, 3 green balls, and 2 blue balls. What is the probability of drawing a green ball?",
-    "difficulty": 3,
-    "topics": ["probability"],
-    "options": [
-      { "optionText": "1/2", "isCorrect": false },
-      { "optionText": "3/10", "isCorrect": true },
-      { "optionText": "2/5", "isCorrect": false },
-      { "optionText": "1/5", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Find the derivative of sin(x) with respect to x.",
-    "difficulty": 3,
-    "topics": ["calculus"],
-    "options": [
-      { "optionText": "cos(x)", "isCorrect": true },
-      { "optionText": "-sin(x)", "isCorrect": false },
-      { "optionText": "tan(x)", "isCorrect": false },
-      { "optionText": "cot(x)", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "Solve the quadratic equation: 2x² + 5x - 3 = 0.",
-    "difficulty": 3,
-    "topics": ["algebra"],
-    "options": [
-      { "optionText": "x = 1/2, -3", "isCorrect": true },
-      { "optionText": "x = -1/2, 3", "isCorrect": false },
-      { "optionText": "x = 2, -3/2", "isCorrect": false },
-      { "optionText": "x = -2, 3/2", "isCorrect": false }
-    ]
-  },
-  {
-    "text": "What is the area of a triangle with base 6 cm and height 8 cm?",
+    "text": "In Express.js, which method is used to handle HTTP GET requests?",
     "difficulty": 2,
-    "topics": ["geometry"],
+    "topics": ["Express"],
     "options": [
-      { "optionText": "24 cm²", "isCorrect": true },
-      { "optionText": "12 cm²", "isCorrect": false },
-      { "optionText": "48 cm²", "isCorrect": false },
-      { "optionText": "36 cm²", "isCorrect": false }
+      { "optionText": "app.get()", "isCorrect": true },
+      { "optionText": "app.post()", "isCorrect": false },
+      { "optionText": "app.put()", "isCorrect": false },
+      { "optionText": "app.delete()", "isCorrect": false }
     ]
   },
   {
-    "text": "Simplify: (5x²y³)⁴",
+    "text": "What is React.js primarily used for?",
     "difficulty": 2,
-    "topics": ["algebra"],
+    "topics": ["React.js"],
     "options": [
-      { "optionText": "625x⁸y¹²", "isCorrect": true },
-      { "optionText": "20x⁸y¹²", "isCorrect": false },
-      { "optionText": "25x⁶y⁹", "isCorrect": false },
-      { "optionText": "10x⁶y⁹", "isCorrect": false }
+      { "optionText": "Building user interfaces", "isCorrect": true },
+      { "optionText": "Managing server-side routing", "isCorrect": false },
+      { "optionText": "Handling database queries", "isCorrect": false },
+      { "optionText": "Building command-line tools", "isCorrect": false }
     ]
   },
   {
-    "text": "If a car travels 120 km in 2 hours, what is its average speed?",
+    "text": "In MongoDB, what is the purpose of the _id field?",
     "difficulty": 2,
-    "topics": ["arithmetic"],
+    "topics": ["MongoDB"],
     "options": [
-      { "optionText": "60 km/h", "isCorrect": true },
-      { "optionText": "40 km/h", "isCorrect": false },
-      { "optionText": "80 km/h", "isCorrect": false },
-      { "optionText": "100 km/h", "isCorrect": false }
+      { "optionText": "It is the primary key of a document", "isCorrect": true },
+      { "optionText": "It is used to store the document's data", "isCorrect": false },
+      { "optionText": "It is used for indexing", "isCorrect": false },
+      { "optionText": "It is the name of the collection", "isCorrect": false }
     ]
   },
   {
-    "text": "What is the sum of 5 and 7?",
+    "text": "Which of these is the correct way to link a CSS file in an HTML document?",
     "difficulty": 1,
-    "topics": ["arithmetic"],
+    "topics": ["HTML", "CSS"],
     "options": [
-      { "optionText": "10", "isCorrect": false },
-      { "optionText": 12, "isCorrect": true },
-      { "optionText": "15", "isCorrect": false },
-      { "optionText": "8", "isCorrect": false }
+      { "optionText": "<link rel='stylesheet' href='styles.css'>", "isCorrect": true },
+      { "optionText": "<style src='styles.css'>", "isCorrect": false },
+      { "optionText": "<css href='styles.css'>", "isCorrect": false },
+      { "optionText": "<link rel='css' href='styles.css'>", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which CSS property is used to change the background color of an element?",
+    "difficulty": 1,
+    "topics": ["CSS"],
+    "options": [
+      { "optionText": "background-color", "isCorrect": true },
+      { "optionText": "color", "isCorrect": false },
+      { "optionText": "bg-color", "isCorrect": false },
+      { "optionText": "background", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the default value of the position property in CSS?",
+    "difficulty": 1,
+    "topics": ["CSS"],
+    "options": [
+      { "optionText": "static", "isCorrect": true },
+      { "optionText": "relative", "isCorrect": false },
+      { "optionText": "absolute", "isCorrect": false },
+      { "optionText": "fixed", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "How do you declare a constant in JavaScript?",
+    "difficulty": 1,
+    "topics": ["JavaScript"],
+    "options": [
+      { "optionText": "const x = 10;", "isCorrect": true },
+      { "optionText": "let x = 10;", "isCorrect": false },
+      { "optionText": "var x = 10;", "isCorrect": false },
+      { "optionText": "constant x = 10;", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "In Node.js, which module is used to create a web server?",
+    "difficulty": 2,
+    "topics": ["Node.js"],
+    "options": [
+      { "optionText": "http", "isCorrect": true },
+      { "optionText": "express", "isCorrect": false },
+      { "optionText": "server", "isCorrect": false },
+      { "optionText": "fs", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which of the following is a valid JSX syntax in React?",
+    "difficulty": 2,
+    "topics": ["React.js"],
+    "options": [
+      { "optionText": "<div>Hello, world!</div>", "isCorrect": true },
+      { "optionText": "<div>Hello, world!</>", "isCorrect": false },
+      { "optionText": "<div>Hello, world</div>", "isCorrect": false },
+      { "optionText": "div{Hello, world!}", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "In MongoDB, which operator is used to find documents where a field's value is greater than a specified value?",
+    "difficulty": 2,
+    "topics": ["MongoDB"],
+    "options": [
+      { "optionText": "$gt", "isCorrect": true },
+      { "optionText": "$lt", "isCorrect": false },
+      { "optionText": "$eq", "isCorrect": false },
+      { "optionText": "$ne", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which JavaScript function is used to convert a string to an integer?",
+    "difficulty": 1,
+    "topics": ["JavaScript"],
+    "options": [
+      { "optionText": "parseInt()", "isCorrect": true },
+      { "optionText": "parseFloat()", "isCorrect": false },
+      { "optionText": "toInteger()", "isCorrect": false },
+      { "optionText": "Number()", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which tag is used in HTML to create a table row?",
+    "difficulty": 1,
+    "topics": ["HTML"],
+    "options": [
+      { "optionText": "<tr>", "isCorrect": true },
+      { "optionText": "<td>", "isCorrect": false },
+      { "optionText": "<th>", "isCorrect": false },
+      { "optionText": "<table>", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "Which CSS property is used to set the space between words in a paragraph?",
+    "difficulty": 2,
+    "topics": ["CSS"],
+    "options": [
+      { "optionText": "word-spacing", "isCorrect": true },
+      { "optionText": "line-height", "isCorrect": false },
+      { "optionText": "letter-spacing", "isCorrect": false },
+      { "optionText": "text-indent", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the purpose of the `useState` hook in React?",
+    "difficulty": 2,
+    "topics": ["React.js"],
+    "options": [
+      { "optionText": "It allows you to manage local component state", "isCorrect": true },
+      { "optionText": "It manages side effects in the component", "isCorrect": false },
+      { "optionText": "It allows you to fetch data from an API", "isCorrect": false },
+      { "optionText": "It is used to create a class component", "isCorrect": false }
     ]
   }
 ]
+
