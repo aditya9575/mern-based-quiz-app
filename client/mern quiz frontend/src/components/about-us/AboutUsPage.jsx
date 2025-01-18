@@ -24,7 +24,7 @@ const AboutUsPage = () => {
                         <Card.Body>
                             <Card.Title>Engaging Content</Card.Title>
                             <Card.Text>
-                                Our quizzes are crafted to make learning fun and interactive, covering a variety of topics like Algebra, Geometry, and more.
+                                Our quizzes are crafted to make learning fun and interactive, covering a variety of topics like React, Javascript, and more.
                             </Card.Text>
                         </Card.Body>
                     </Card>
